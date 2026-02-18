@@ -8,7 +8,7 @@ We implement a non-blocking LED heartbeat using `millis()` instead of `delay()`.
 
 ## 🎬 Watch the Episode
 
-YouTube: LINK
+[YouTube](https://www.youtube.com/watch?v=lMF0cNxmGCw)
 
 ---
 

@@ -19,7 +19,7 @@ The project evolves incrementally. Each episode adds a new architectural layer.
 In this episode we implement a non-blocking LED timing loop using [`millis()`](https://docs.arduino.cc/language-reference/en/functions/time/millis/).  
 This establishes the firmware timing architecture for the entire system.
 
-🎬 Watch on YouTube: LINK  
+🎬 Watch on [YouTube](https://www.youtube.com/watch?v=lMF0cNxmGCw).  
 📁 Code & Wiring: [Episode 01](episodes/ep01-led-heartbeat/)
 
 ---
