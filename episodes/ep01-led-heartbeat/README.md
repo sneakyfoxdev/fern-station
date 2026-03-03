@@ -62,9 +62,9 @@ This pattern becomes the timing backbone for all future episodes.
 
 LED blinks every second.
 
-Serial Monitor prints:
-Beep
-Beep
+Serial Monitor prints:  
+Beep  
+Beep  
 Beep
 
 ---

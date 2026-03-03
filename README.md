@@ -1,3 +1,4 @@
+![SneakyFoxDev Logo](SneakyFoxDev-Banner.png)
 # Fern Station
 
 Fern Station is a structured embedded systems build series using ESP32.
@@ -14,13 +15,12 @@ The project evolves incrementally. Each episode adds a new architectural layer.
 
 ## 🔥 Latest Episode
 
-### Episode 01 — LED Heartbeat
+### Episode 02 — Button Control
 
-In this episode we implement a non-blocking LED timing loop using [`millis()`](https://docs.arduino.cc/language-reference/en/functions/time/millis/).  
-This establishes the firmware timing architecture for the entire system.
+In this episode we add a button and an LED controlled by it. This is the first step towards interacting with the system
 
-🎬 Watch on [YouTube](https://www.youtube.com/watch?v=lMF0cNxmGCw).  
-📁 Code & Wiring: [Episode 01](episodes/ep01-led-heartbeat/)
+🎬 Watch on [YouTube](https://youtu.be/quboO_ei0jU).  
+📁 Code & Wiring: [Episode 02](episodes/ep02-button_control)
 
 ---
 
@@ -28,9 +28,10 @@ This establishes the firmware timing architecture for the entire system.
 
 | Episode | Title | Status |
 |----------|--------|---------|
-| 01 | LED Heartbeat | ✅ Released |
-| 02 | Button Input | ⏳ Planned |  
-| 03 | Debounce Logic | ⏳ Planned |  
+| 01 | LED Heartbeat            | ✅ Released |
+| 02 | Button Control             | ✅ Released |  
+| 03 | Debounce Logic and Modes | ⏳ Planned |  
+| 04 | Button struct            | ⏳ Planned |  
 |    | More to come... | |
 ---
 
@@ -64,6 +65,7 @@ Toolchain:
 - [5mm LED](https://amzn.to/3OOnLwV)
 - [220Ω resistor](https://amzn.to/4bXv3YY)
 - [USB cable](https://amzn.to/4aVS5OW)
+- [Button](https://amzn.to/46kvk4H)
 
 (See episode folders for detailed BOM per build step.)
 
@@ -83,9 +85,9 @@ If you’d like to support the development of Fern Station:
 - Share the project
 - Patreon (coming soon)
 
-![Fern Station Logo](SneakyFoxDev-Banner.png)
+---
 
 ## Affiliate Disclosure
 
-This project may include affiliate links in the future.  
+This project includes affiliate links.  
 They help support development at no extra cost to you.
