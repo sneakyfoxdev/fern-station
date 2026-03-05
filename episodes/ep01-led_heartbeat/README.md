@@ -30,9 +30,6 @@ LED Cathode → 220Ω → GND
 
 Ensure resistor is placed in series.
 
-Recommended LED current:
-~10–15mA
-
 ---
 
 ## 🧠 Firmware Concept

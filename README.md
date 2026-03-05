@@ -1,9 +1,11 @@
+# Fern Station Project
+
 ![SneakyFoxDev Logo](SneakyFoxDev-Banner.png)
-# Fern Station
 
 Fern Station is a structured embedded systems build series using ESP32.
 
 This repository accompanies this SneakyFoxDev YouTube series and contains:
+
 - Full firmware per episode
 - Wiring documentation
 - Bill of materials
@@ -15,12 +17,11 @@ The project evolves incrementally. Each episode adds a new architectural layer.
 
 ## 🔥 Latest Episode
 
-### Episode 02 — Button Control
+### Episode 03 — Debounce Logic and Modes
 
-In this episode we add a button and an LED controlled by it. This is the first step towards interacting with the system
+In this episode we add debounce logic to the button and introduce two interaction modes: a short press that toggles the LED, and a long press that turns it on.
 
-🎬 Watch on [YouTube](https://youtu.be/quboO_ei0jU).  
-📁 Code & Wiring: [Episode 02](episodes/ep02-button_control)
+📁 Code & Wiring: [Episode 03](episodes/ep03-debounce_logic)
 
 ---
 
@@ -30,9 +31,10 @@ In this episode we add a button and an LED controlled by it. This is the first s
 |----------|--------|---------|
 | 01 | LED Heartbeat            | ✅ Released |
 | 02 | Button Control             | ✅ Released |  
-| 03 | Debounce Logic and Modes | ⏳ Planned |  
+| 03 | Debounce Logic and Modes | ✅ Released |  
 | 04 | Button struct            | ⏳ Planned |  
 |    | More to come... | |
+
 ---
 
 ## 🧠 Project Philosophy
@@ -40,6 +42,7 @@ In this episode we add a button and an LED controlled by it. This is the first s
 Fern Station is a progressively engineered embedded system for plant monitoring.
 
 Concepts introduced:
+
 - Non-blocking timing
 - Modular firmware structure
 - Hardware abstraction
@@ -50,11 +53,8 @@ Concepts introduced:
 
 ## 🛠 Hardware Platform
 
-Primary board:
-- ESP32-WROOM-32 Dev Module
-
-Toolchain:
-- Arduino IDE (primary)
+Primary board: ESP32-WROOM-32 Dev Module
+Toolchain: Arduino IDE (primary)
 
 ---
 

@@ -10,11 +10,8 @@ build/
 .arduino15/
 cache/
 
-# VSCode user-specific settings (keep c_cpp_properties.json for IntelliSense)
-.vscode/settings.json
-.vscode/launch.json
-.vscode/tasks.json
-.vscode/extensions.json
+# VSCode user-specific settings
+.vscode
 
 # Windows
 Thumbs.db

@@ -1,13 +1,12 @@
-# Episode 02 — From the button of our heart (Button Control)
+# Episode 03 — Debounce Logic and Modes
 
-This episode adds control with a button. We start controlling an LED, and will expand on that in the next episodes.
-Despite button bouncing effects, the blinking LED remains uninterrupted, as expected.
+This episode solves the button bounce problem and introduces two interaction modes: a short press toggles the LED, a long press turns it on permanently.
 
 ---
 
 ## 🎬 Watch the Episode
 
-[YouTube](https://youtu.be/quboO_ei0jU)
+YouTube — coming soon
 
 ---
 
@@ -25,21 +24,28 @@ Despite button bouncing effects, the blinking LED remains uninterrupted, as expe
 
 ## 🔌 Wiring
 
-GPIO 23 → LED1 Anode  
+GPIO 23 → LED1 Anode
 LED1 Cathode → 220Ω → GND
 
 GPIO 18 → Button → GND (internal pull-up enabled)
-GPIO 25 → LED2 Anode  
+GPIO 25 → LED2 Anode
 LED2 Cathode → 220Ω → GND
 
 ---
 
 ## 🧠 Firmware Concept
 
-We add a button controlling an LED.
-The button uses the ESP32 internal pull-up resistor avoiding the need for an external resistor.
-The button logic is inverted. 
-Because INPUT_PULLUP pulls the pin HIGH, pressing the button pulls it LOW.
+### Debounce
+
+Mechanical buttons produce noisy transitions when pressed or released.
+A 35ms debounce window filters this out: any state change resets a timer, and the new state is only accepted once the signal has been stable for the full duration.
+
+### Two Modes
+
+The firmware measures how long the button was held and reacts on release:
+
+- **Short press** (< 900ms) — toggles LED2
+- **Long press** (≥ 900ms) — turns LED2 on
 
 ---
 
@@ -57,8 +63,8 @@ Because INPUT_PULLUP pulls the pin HIGH, pressing the button pulls it LOW.
 
 The heartbeat LED continues to blink every second, uninterrupted.
 
-The button LED will turn ON and OFF controlled by the external button.
-Occasionally, this LED will flicker due to button bounce.
+On short press, Serial Monitor prints `SHORT press` and LED2 toggles.
+On long press, Serial Monitor prints `LONG press` and LED2 turns on.
 
 ---
 
@@ -72,6 +78,6 @@ Occasionally, this LED will flicker due to button bounce.
 
 ## 🔮 Next Episode
 
-Next, we introduce button debounce logic and modes.
+Next, we refactor the button logic into a reusable `Button` struct.
 
 ---
