@@ -1,0 +1,27 @@
+# Arduino build output
+build/
+**/build/
+*.elf
+*.bin
+*.hex
+*.map
+
+# Arduino cache
+.arduino15/
+cache/
+
+# VSCode user-specific settings (keep c_cpp_properties.json for IntelliSense)
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/extensions.json
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
