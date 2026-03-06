@@ -61,7 +61,7 @@ The firmware measures how long the button was held and reacts on release:
 
 ## 🧪 Expected Output
 
-The heartbeat LED continues to blink every second, uninterrupted.
+The heartbeat LED continues to blink on fixed intervals, uninterrupted.
 
 On short press, Serial Monitor prints `SHORT press` and LED2 toggles.
 On long press, Serial Monitor prints `LONG press` and LED2 turns on.
